@@ -1,0 +1,332 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+    color: #FA6622;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+nav {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink {
+    color: black;
+    margin-right: 40px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    filter: grayscale(100%); 
+    transition: all .4s;
+}
+
+.openMore {
+    font-size: 25px;
+}
+
+.github {
+    background: url(https://github.githubassets.com/images/modules/logos_page/Octocat.png) center/contain no-repeat; 
+}
+
+.gmail {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png) center/contain no-repeat;
+}
+
+.telegram {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png) center/contain no-repeat;
+}
+
+.codewars {
+    background: url(https://miro.medium.com/max/1760/1*W-OZsYSFMIJg_M-bPHH0-w.png) center/cover no-repeat;
+}
+
+.contact {
+    background: url(https://s1.iconbird.com/ico/2013/12/518/w512h5121386956989Contacts01.png) center/cover no-repeat;
+    margin-left: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contact:after {
+    content: 'my contacts';
+    position: absolute;
+    left: 60px;
+    font-size: 14px;
+    opacity: 0;
+    transition: all .6s;
+}
+
+.contact:hover:after {
+    opacity: 1;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    filter: none;
+}
+
+.aboutMe {
+    padding: 60px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mainText {
+    font-size: 25px;
+    padding: 20px;
+}
+
+.mySkills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B2536;
+    color: white;
+}
+
+.skillTitle {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.skillsItems {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.skillItem {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.skillItem:nth-child(2) {
+    margin: 0 140px;
+}
+
+.skillIMG {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.skillIMG.html {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png) center/contain no-repeat;
+}
+.skillIMG.css {
+    background: url(https://hsto.org/webt/et/vg/um/etvgumvdqz6_rs1dp3kjyjt-spm.png) center/contain no-repeat;
+}
+.skillIMG.javascript{
+    background: url(https://partner.biz.ua/images/blogi/206_1480059951_javascript-function-declaration-vs-function-expression.png) center/contain no-repeat;
+}
+
+.itemTitle {
+    font-size: 15px;
+}
+
+.skillLevel img {
+    height: 20px;
+}
+
+.itemTitle {
+    margin-bottom: 20px;
+}
+
+.nonActive {
+    filter: grayscale(100%); 
+}
+
+.technologies {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologiesTitle {
+    margin-bottom: 80px;
+}
+
+.technologiesList {
+    width: 40%;
+    text-align: center;
+    column-count: 2;
+    opacity: 0;
+    height: 145px;
+}
+
+.technologiesItem {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.technologiesItem:before {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: #FA6622;
+    position: absolute;
+    left: 15%;
+    top: calc(50% - 4px);
+}
+
+.coverText {
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+div.fp-tooltip.fp-right {
+    color: #FA6622;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B2536;
+    height: 100vh;
+}
+
+h2.certificatesTitle {
+    margin-bottom: 80px;
+}
+
+.certificatesItems {
+    display: flex;
+    justify-content: space-around;
+}
+
+.certificateItem {
+    display: block;
+    height: 350px;
+    width: 500px;
+    transition: all .4s;
+}
+
+.certificateItem:first-child {
+    margin-right: 60px;
+}
+
+.certificateItem:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hillelBasic {
+    background: url(../img/FrontEndBasic.png) center/contain no-repeat;
+}
+
+.hillelAdvanced {
+    background: url(../img/FrontEndPro.png) center/contain no-repeat;
+}
+
+.contacts {
+    height: 100vh;
+    background-color: white;
+}
+
+div.fp-slidesNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.fp-slidesNav a.active span {
+    background-color: #FA6622;
+}
+
+.fp-controlArrow {
+    margin: 0 100px;
+}
+
+.popupBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popupBackground:hover {
+    cursor: pointer;
+}
+
+.showPopup {
+    display: flex;
+    opacity: 0;
+}
+
+.popupContact {
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: default;
+}
+
+.photo {
+    height: 300px;
+    width: 300px;
+    background-color: lightgrey;
+    margin-bottom: 30px;
+    background-color: #FA6622;
+    position: relative;
+}
+
+.photo:after {
+    content: "";
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: url(../img/IMG_4724.JPG) 100%/cover no-repeat;
+    transform: rotate(180deg);
+}
+
+.profileItem {
+    margin-bottom: 20px;
+} 
+
+.profileTitle {
+    font-weight: 900;
+    color: #FA6622;
+}
