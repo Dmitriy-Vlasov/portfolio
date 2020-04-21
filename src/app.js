@@ -59,9 +59,9 @@ function initPageScroll() {
         fixedElements: 'nav',
         afterLoad: function(origin, destination, direction) {
             if (destination.index === 1) {
-                animeSkills(1);
+                // animeSkills(1);
             } else if (destination.index === 2) {
-                animeTechnologies(1);
+                // animeTechnologies(1);
             }
         }
     });

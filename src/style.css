@@ -2,10 +2,23 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
+.section {
+    padding: 0 15px;
+}
+
+.section:nth-child(2n) {
+    background-color: #042E44;
+}
+
+.section:nth-child(2n + 1) {
+    background-color: white;
+}
+
 h2 {
     color: #FA6622;
     font-size: 30px;
     margin-bottom: 80px;
+    text-align: center;
 }
 
 nav {
@@ -22,10 +35,10 @@ nav {
 
 .navLink {
     color: black;
-    margin-right: 40px;
+    margin-right: 5%;
     display: block;
-    height: 40px;
-    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
     filter: grayscale(100%); 
     transition: all .4s;
 }
@@ -38,8 +51,8 @@ nav {
     background: url(https://github.githubassets.com/images/modules/logos_page/Octocat.png) center/contain no-repeat; 
 }
 
-.gmail {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png) center/contain no-repeat;
+.linkedin {
+    background: url(https://images.squarespace-cdn.com/content/v1/54bd36abe4b0ff9569953efa/1540973429405-3HY7G3IEYXXVGUI0CDO5/ke17ZwdGBToddI8pDm48kLXCf88_9uNTKXkq27cF4sB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmwbA6upbL5Bu97tJociXJklKprRMdH2Tl4F1PjaoPT3YUs5wkl5ojCV1O900UJ7ME/LinkedIn_logo_initials.png) center/contain no-repeat;
 }
 
 .telegram {
@@ -52,7 +65,7 @@ nav {
 
 .contact {
     background: url(https://s1.iconbird.com/ico/2013/12/518/w512h5121386956989Contacts01.png) center/cover no-repeat;
-    margin-left: 60px;
+    margin-left: 10%;
     position: relative;
     display: flex;
     align-items: center;
@@ -91,7 +104,6 @@ nav {
 
 .mainText {
     font-size: 25px;
-    padding: 20px;
 }
 
 .mySkills {
@@ -100,8 +112,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0B2536;
     color: white;
+    text-align: center;
 }
 
 .skillTitle {
@@ -112,7 +124,7 @@ nav {
 .skillsItems {
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 90%;
 }
 
@@ -122,11 +134,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .skillItem:nth-child(2) {
-    margin: 0 140px;
+    margin: 0 160px;
 }
 
 .skillIMG {
@@ -167,18 +179,18 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .technologiesTitle {
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .technologiesList {
-    width: 40%;
     text-align: center;
     column-count: 2;
-    opacity: 0;
-    height: 145px;
+    width: 60%;
 }
 
 .technologiesItem {
@@ -200,6 +212,7 @@ nav {
 .coverText {
     font-size: 20px;
     margin-top: 80px;
+    text-align: center;
 }
 
 div.fp-tooltip.fp-right {
@@ -211,7 +224,6 @@ div.fp-tooltip.fp-right {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0B2536;
     height: 100vh;
 }
 
@@ -222,6 +234,8 @@ h2.certificatesTitle {
 .certificatesItems {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
 }
 
 .certificateItem {
@@ -232,7 +246,7 @@ h2.certificatesTitle {
 }
 
 .certificateItem:first-child {
-    margin-right: 60px;
+    margin-bottom: 30px;
 }
 
 .certificateItem:hover {
@@ -330,3 +344,106 @@ div.fp-slidesNav a.active span {
     font-weight: 900;
     color: #FA6622;
 }
+
+@media (max-width: 1300px) {
+    .technologiesItem:before {
+        display: none;
+    }
+}
+
+@media (max-width: 1145px) {
+    .certificateItem {
+        height: 300px;
+        width: 430px;
+    }
+}
+
+@media (max-width: 985px) {
+
+    .certificate h2 {
+        margin-bottom: 40px;
+    }
+    .certificateItem {
+        height: 210px;
+        width: 300px;
+    }
+
+    .certificateItem.hillelAdvanced {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .skillItem:nth-child(2) {
+        margin: 10px 0;
+    }
+
+    .mySkills h2 {
+        margin-bottom: 40px;
+    }
+
+    .skillIMG {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .itemTitle {
+        font-size: 12px;
+    }
+
+    .skillLevel {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 940px) {
+    .technologiesList {
+        column-count: 1;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 589px) {
+    .mainText {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .skillsItems {
+        flex-direction: column;
+    }
+
+    .navLink {
+        height: 20px;
+        width: 20px;
+    }
+
+    .skillItem:nth-child(2) {
+        margin: 20px 0;
+    }
+
+    .skillLevel {
+        font-size: 2px;
+    }
+
+    .technologies h2 {
+        margin-bottom: 40px;
+    }
+
+    .technologiesList {
+        font-size: 15px;
+    }
+
+    .coverText {
+        font-size: 17px;
+        margin-top: 60px;
+    }
+}
+
+
+
