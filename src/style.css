@@ -31,6 +31,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 
 .navLink {
@@ -134,7 +135,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 .skillItem:nth-child(2) {
@@ -191,6 +192,7 @@ nav {
     text-align: center;
     column-count: 2;
     width: 60%;
+    opacity: 0;
 }
 
 .technologiesItem {
@@ -304,7 +306,7 @@ div.fp-slidesNav a.active span {
 }
 
 .popupContact {
-    width: 800px;
+    width: 50%;
     margin: 0 auto;
     padding: 40px 30px;
     background-color: white;
@@ -314,6 +316,7 @@ div.fp-slidesNav a.active span {
     align-items: center;
     position: relative;
     cursor: default;
+    text-align: center;
 }
 
 .photo {
@@ -402,6 +405,18 @@ div.fp-slidesNav a.active span {
     .technologiesList {
         column-count: 1;
         font-size: 15px;
+    }
+}
+
+@media (max-width: 715px) {
+    .popupContact {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .profileTitle {
+        display: block;
+        margin-bottom: 5px;
     }
 }
 

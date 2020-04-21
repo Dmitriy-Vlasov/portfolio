@@ -59,9 +59,9 @@ function initPageScroll() {
         fixedElements: 'nav',
         afterLoad: function(origin, destination, direction) {
             if (destination.index === 1) {
-                // animeSkills(1);
+                animeSkills(1);
             } else if (destination.index === 2) {
-                // animeTechnologies(1);
+                animeTechnologies(1);
             }
         }
     });
@@ -73,7 +73,6 @@ function animeSkills(opacity) {
         targets: ['.firstEl', '.secondEl', '.thirdEl'],
         easing: 'easeInOutExpo',
         opacity: opacity,
-        translateX: '185%',
         delay: anime.stagger(500, {easing: 'easeInOutExpo'}),
         direction: 'normal',
     });
@@ -92,7 +91,6 @@ function popupAnime(opacity, completeFunction) {
 function animeTechnologies(opacity) {
     anime({
         targets: ['.technologiesList'],
-        width: '60%',
         easing: 'easeInOutExpo',
         direction: 'normal',
         opacity: opacity,
